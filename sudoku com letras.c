@@ -1,4 +1,4 @@
-#include <math.h>parametro
+#include <math.h>
 #define referencia 0
 #include <stdio.h>
 #define parametro 3
