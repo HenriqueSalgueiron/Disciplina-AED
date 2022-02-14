@@ -1,3 +1,4 @@
+#include <math.h>
 #include<stdio.h>
 int main(){
     
@@ -7,7 +8,7 @@ int main(){
     for (x=0;x<3;x++){
         for (y=0;y<3;y++){
             cc++;
-            cc=matriz[x][y];
+            matriz[x][y]=cc;
             printf("%d ", matriz[x][y]);
         }
         printf("\n");
