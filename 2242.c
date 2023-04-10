@@ -1,28 +1,26 @@
 #include <stdio.h>
 
-int main()
-{
-    int i, j=0, lnth;
-    char x[60], y[60];
-    scanf("%s", x);
-    for(i=0; x[i]; i++)
-    {
-        if(x[i]=='a' || x[i]=='e' || x[i]=='i' || x[i]=='o' || x[i]=='u')
-        {
-            y[j] = x[i];
-            j++;
-        }
-    }
-    y[j] = '\0';
-    lnth = strlen(y);
-    for(i=0, j=lnth-1; i < lnth; i++, j--)
-    {
-        if(y[i] != y[j])
-        {
-            printf("N\n");
-            return 0;
-        }
-    }
-    printf("S\n");
-    return 0;
+int main(){
+	int M,N,V[15],i;
+	scanf("%d %d",&M,&N);
+
+	while(M!=0 || N!=0)
+	{
+		int S = M + N;
+
+		//Separando os dígitos
+		for(i = 0 ; i < 11 ; i++)
+		{
+			V[i] = S %10;
+			S /= 10;
+		}
+
+		//Imprimindo os vetores (de trás para frente)
+		for(i = 10 ; i >= 0 ; i--){
+			if(V[i] != 0){
+				printf("%d",V[i]);
+			}
+		}
+		printf("\n");
+	}
 }
