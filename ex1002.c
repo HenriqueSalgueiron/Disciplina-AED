@@ -7,5 +7,5 @@ int main () {
     area = 3.14159*raio*raio;
     printf("A = %lf",area);
 
-    return 0;
+    return 0 ;
 }

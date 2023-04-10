@@ -24,5 +24,5 @@ int main()
         }
     }
     printf("S\n");
-    return 0;
+    return 0 ;
 }
